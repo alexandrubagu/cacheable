@@ -21,6 +21,9 @@ defmodule Cacheable.MixProject do
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
-    []
+    [
+      {:cachex, "~> 3.2"},
+      {:dialyxir, "~> 1.0.0-rc.7", only: [:dev, :test], runtime: false}
+    ]
   end
 end

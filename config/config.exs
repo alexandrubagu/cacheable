@@ -1,4 +1,10 @@
 use Mix.Config
 
-# Configures ETS Adapter
-config :cacheable, Cacheable.Adapters.ETS, table_name: :cacheable
+# Configures decorator name
+config :cacheable, decorator_name: :cacheable
+
+# Configures default adapter
+config :cacheable, default_adapter: Cacheable.Adapters.Cachex
+
+# Configures Cachex adapter
+config :cacheable, Cacheable.Adapters.Cachex, table_name: :cacheable
